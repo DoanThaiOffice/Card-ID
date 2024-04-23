@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+*{
+    box-sizing: border-box;
+    font-family:"Jersey";
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #209783, #37bdce);
+}
+.card{
+    height: 300px;
+    width: 217px;
+    background: #343a40;
+    padding: 1px;
+    margin: 8% 40%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.card__img{
+    width: 100px;
+    height: 100px;
+    margin: 16px auto;
+    /* khi ảnh vượt quá giới hạn cần cắt nhỏ */
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.5s;
+    border-color: blanchedalmond;
+    cursor: pointer;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.card__img:hover{
+    height: 100%;
+    width: 100%;
+    border-radius: unset;
+    transition: 0.5s;
+    transform: translateY(-15px);
+}
+.card__button a{
+    margin: 20px 14px 20px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+.card__contact button{
+    color: white;
+    background-color: #343a40;
+    border-color: pink;
+    border-radius: 9px;
+    font-size: 13px;
+    padding: 10px;
+}
+.card__contact button:hover{
+    background: pink;
+}
+p{
+    color:azure;
+    cursor: pointer;
+}
+h2{
+    color:aquamarine;
+    cursor: pointer;
+}
+
